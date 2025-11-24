@@ -1,6 +1,7 @@
 <div class="task-container">
   <h2>Crear Tarea</h2>
   <h3>{{tarea | json}}</h3>
+  <div>{{ taskManager?.getTasks() | json }}</div>
   <form>
     <div class="form-group">
       <label for="nombre">Nombre</label>
@@ -22,7 +23,7 @@
       <input [(ngModel)]=tarea.completada [ngModelOptions]="{standalone: true}" id="pendiente" type="checkbox" />
     </div>
 
-    <button type="submit" class="btn-create">Crear</button>
+    <button class="btn-create" (click)="createTask()">Crear</button>
   </form>
 </div>
 
