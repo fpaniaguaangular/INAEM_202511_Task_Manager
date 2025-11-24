@@ -1,0 +1,72 @@
+:root {
+  --ocre-principal: #c49b63;
+  --ocre-oscuro: #8a6b38;
+  --ocre-claro: #e8d7b8;
+}
+
+.task-container {
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #c49b63;
+  border: 2px solid #8a6b38;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 8px;
+  border: 1px solid #c49b63;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #fffaf2;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.check-group {
+  flex-direction: row;
+  align-items: center;
+}
+
+.check-group label {
+  margin-right: 10px;
+}
+
+.btn-create {
+  width: 100%;
+  padding: 10px;
+  background: #01236b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.btn-create:hover {
+  background: #2b55fc;
+}
