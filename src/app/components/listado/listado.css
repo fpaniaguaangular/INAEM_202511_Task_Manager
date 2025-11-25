@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #e8f2ff; /* azul muy claro */
+    margin-top: 1em;
+}
+
+th {
+    background-color: #2c6ecb; /* azul fuerte */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #1f4f91; /* azul más oscuro */
+}
+
+td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #bcd4f6; /* azul suave */
+    color: #0b2e59; /* azul oscuro para texto */
+}
+
+tr:nth-child(even) {
+    background-color: #d6e6ff; /* azul claro */
+}
+
+tr:hover {
+    background-color: #c2d9ff; /* azul un poco más intenso */
+    transition: 0.2s ease-in-out;
+}

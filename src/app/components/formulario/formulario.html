@@ -1,29 +1,27 @@
 <div class="task-container">
   <h2>Crear Tarea</h2>
-  <h3>{{tarea | json}}</h3>
-  <div>{{ taskManager?.getTasks() | json }}</div>
-  <form>
+
+  <form class="form-horizontal">
     <div class="form-group">
       <label for="nombre">Nombre</label>
-      <input [(ngModel)]=tarea.nombre [ngModelOptions]="{standalone: true}" nombre="nombre" type="text" placeholder="Nombre de la tarea" />
+      <input [(ngModel)]="tarea.nombre" [ngModelOptions]="{standalone: true}" name="nombre" type="text" placeholder="Nombre de la tarea" />
     </div>
 
     <div class="form-group">
       <label for="fecha">Fecha</label>
-      <input [(ngModel)]=tarea.fecha [ngModelOptions]="{standalone: true}" id="fecha" type="date" />
+      <input [(ngModel)]="tarea.fecha" [ngModelOptions]="{standalone: true}" id="fecha" type="date" />
     </div>
 
     <div class="form-group">
       <label for="descripcion">Descripción</label>
-      <textarea [(ngModel)]=tarea.descripcion [ngModelOptions]="{standalone: true}" id="descripcion" rows="3" placeholder="Describe la tarea..."></textarea>
+      <textarea [(ngModel)]="tarea.descripcion" [ngModelOptions]="{standalone: true}" id="descripcion" rows="3" placeholder="Describe la tarea..."></textarea>
     </div>
 
     <div class="form-group check-group">
-      <label for="pendiente">Pendiente</label>
-      <input [(ngModel)]=tarea.completada [ngModelOptions]="{standalone: true}" id="pendiente" type="checkbox" />
+      <label for="pendiente">Completada</label>
+      <input [(ngModel)]="tarea.completada" [ngModelOptions]="{standalone: true}" id="pendiente" type="checkbox" />
     </div>
 
     <button class="btn-create" (click)="createTask()">Crear</button>
   </form>
 </div>
-

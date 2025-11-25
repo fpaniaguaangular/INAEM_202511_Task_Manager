@@ -1,1 +1,16 @@
-<p>listado works!</p>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Fecha</th>
+        <th>Completada</th>
+    </tr>
+    @for (tarea of taskManager.getTasks(); track tarea.nombre) {
+    <tr>
+        <td>{{ tarea.nombre }}</td>
+        <td>{{ tarea.descripcion }}</td>
+        <td>{{ tarea.fecha | date:'dd-MM-yyyy' }}</td>
+        <td>{{ tarea.completada ? 'Sí' : 'No' }}</td>
+    </tr>
+    }
+</table>

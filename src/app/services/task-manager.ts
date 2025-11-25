@@ -6,8 +6,15 @@ import { Tarea } from '../interfaces/tarea';
 })
 export class TaskManager {
   private tasks: Tarea[] = [];
+  constructor() {
+    this.tasks = localStorage.getItem('tasks')
+      ? JSON.parse(localStorage.getItem('tasks')!)
+      : [];
+  }
+  
   public addTask(task : Tarea): void {
     this.tasks.push(task);
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
   public removeTask(taskName : string): void {
   }

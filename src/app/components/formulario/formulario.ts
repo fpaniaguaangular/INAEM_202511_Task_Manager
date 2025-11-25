@@ -1,12 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { Tarea } from '../../interfaces/tarea';
-import { JsonPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TaskManager } from '../../services/task-manager';
 
 @Component({
   selector: 'app-formulario',
-  imports: [JsonPipe, FormsModule],
+  imports: [FormsModule],
   templateUrl: './formulario.html',
   styleUrl: './formulario.css',
 })
