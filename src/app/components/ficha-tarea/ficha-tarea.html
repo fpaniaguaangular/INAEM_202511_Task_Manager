@@ -1,0 +1,6 @@
+<div class="ficha">
+    <div>Título: {{tarea?.nombre}}</div>
+    <div>Fecha: {{tarea?.fecha | date:'dd-MM-yyyy'}}</div>
+    <div>Descripción:{{tarea?.descripcion}}</div>
+    <div>Completada:{{tarea?.completada ? "Sí" : "No"}}</div>
+</div>

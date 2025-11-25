@@ -1,0 +1,7 @@
+.counter {
+    width: fit-content;
+    padding: 0.3em;
+    border-radius: 5px;
+    background-color: rgb(11, 0, 221);
+    color: white;
+}

@@ -1,0 +1,5 @@
+<div class="contenedor-fichas">
+    @for (tareaActual of taskManager.getTasks(); track tareaActual.nombre) {
+    <app-ficha-tarea [tarea]=tareaActual></app-ficha-tarea>
+    }
+</div>
