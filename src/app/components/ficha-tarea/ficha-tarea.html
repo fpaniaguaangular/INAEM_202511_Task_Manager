@@ -1,4 +1,4 @@
-<div class="ficha">
+<div [ngClass]="{ficha : true, completed: tarea?.completada, incomplete: !tarea?.completada}">
     <div>Título: {{tarea?.nombre}}</div>
     <div>Fecha: {{tarea?.fecha | date:'dd-MM-yyyy'}}</div>
     <div>Descripción:{{tarea?.descripcion}}</div>

@@ -34,3 +34,13 @@
     background: #e8ffe8;
     color: #2d7c2d;
 }
+
+.completed {
+    background-color: rgb(199, 250, 199);
+    font-weight: bold;
+}
+
+.incomplete {
+    background-color: rgb(255, 145, 145);
+    font-weight: bold;
+}
